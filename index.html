@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubeen Portfolio</title>
+    <link href="./styles/style.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css">
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+<!-- ion icons link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Include Toastify JS -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</head>
+<body class="overflow-x-hidden">
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="./assets/header-bg-color.png" class="w-full">
+    </div>
+    <!-- Header Section -->
+     <header>
+        <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ">
+          <h1 class="text-3xl font-bold shadow-sm cursor-pointer w-28 mr-14">Mubeen.</h1>
+            <ul class="hidden gap-6 px-12 py-3 bg-white bg-opacity-50 rounded-full shadow-sm md:flex item-center lg:gap-8 ">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="flex gap-4 item-center">
+                <!-- <button ><img src="./assets/moon.png" class="w-6"></button> -->
+
+                <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 ">Contact<img src="./assets/arrowup.png" alt="" class="w-3"/></a>
+            <button class="block ml-3 md:hidden" onclick="openMenu()"><img src="./assets/buttonmenu.png" class="w-6" ></button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <ul id="sideMenu" class="fixed top-0 bottom-0 z-50 flex flex-col w-64 h-screen gap-4 px-10 py-20 text-black transition duration-500 md:hidden -right-64 bg-rose-50">
+                <div class="absolute right-6 top-6" onclick="closeMenu()">
+                    <img src="./assets/close.png" class="w-5 cursor-pointer" >
+                </div>
+
+                
+                
+                <li><a href="/" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <!-- <li><a href="#skill" onclick="closeMenu()">Skill</a></li> -->
+                <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+
+            
+        </nav>
+
+     </header>
+     <!-- Hero Section -->
+      <div class="flex flex-col items-center justify-center w-11/12 h-screen max-w-3xl gap-4 mx-auto text-center wow slideInLeft">
+        <img src="./assets/about.png" class="w-32 rounded-full ">
+        <h3 class="flex items-end gap-2 mb-3 text-xl md:text-2xl ">Hi I'm Muhammad Mubeen </h3>
+        <h1 class="text-3xl sm:text-5xl lg:text-[60px]">MERN Stack Developer </h1>
+        <p class="mx-auto mx-w-2xl">Passionate MERN Stack Developer, focused on building robust, scalable Web and Mobile applications. Committed to delivering innovative solutions that enhance business growth and user experience.
+            </p>
+            <div class="flex flex-col items-center gap-4 mt-4 sm:flex-row">
+                <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-t from-[#b820e6] to-[#da7d20]  text-white text-wrap flex items-center 
+                gap-2">Contact me <img src="./assets/rightarrow.png" class="w-5"> </a>
+                <a href="../Muhammad_Mubeen_Resume.pdf" download class="flex items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full text-wrap">Download <img src="./assets/downloadarrow.png" class="w-5"> </a>
+
+            </div>     
+        </div>
+
+        <!-- About Section -->
+         <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+            <h4 class="mb-2 text-lg text-center">Introduction</h4>
+            <h2 class="text-4xl text-center">About Me</h2>
+            
+            <div class="flex flex-col items-center w-full gap-20 my-20 lg:flex-row">
+                <div class="relative mx-auto max-w-max wow slideInLeft">
+                    <img src="./assets/about.png" alt="about" class="w-64 sm:w-80 rounded-3xl max-w-none">
+
+
+                    <div class="absolute bottom-0 right-0 w-1/2 bg-white rounded-full aspect-square translate-x-1/4 translate-y-1/3 flex justify-center items-center shadow-[0_4px_55px_rgba(149,0,162,0.15)] ">
+                        <img src="./assets/circular_image.png" class="w-full">
+                        <img src="./assets/div.jpg" class="absolute w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 ">
+
+                    </div>
+                </div>
+                <div class="flex-1 wow slideInRight "data-wow-offset="10"  data-wow-iteration="1">
+                    <p class="max-w-2xl mb-10">
+                        I began my career as a front-end developer at Jeeni Tech, working with .NET Framework Technology. I specialize in the MERN Stack to build dynamic web applications. 
+                        My passion for self-learning drives me to continuously enhance my skills and ensure optimal customer satisfaction.
+
+                    </p>
+                    <ul class="grid grid-cols-1 gap-6 max-w-1xl sm:grid-cols-3">
+                       <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./assets/language.png" alt="" class="mt-3 w-7">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-sm text-gray-600">
+                    Rest ApI,
+HTML, Css , JavaScript,<br>
+NodeJS , ReactJs  etc.
+                        </p>
+                       </li>
+                       
+                       <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./assets/Education.png" alt="" class="mt-3 w-7">
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <p class="text-sm text-gray-600">
+                    Becholar in Computer Science 
+                    (Jan 2020 - July 2024)
+
+                        </p>
+                       </li>
+                       
+                       <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./assets/project.png" alt="" class="mt-3 w-7">
+                        <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                        <p class="text-sm text-gray-600">
+                    Build More than 5 Projects
+                        </p>
+                       </li>
+                    </ul>
+                    <h4 class="my-6 text-gray-700">Tools I Use</h4>
+                    <ul class="flex items-center gap-3 sm:gap-5">
+                        <li class="flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer sm:w-14 aspect-square hover:-translate-y-1">
+                            <img src="./assets/vscode-xCMPv9CZ.png" alt="" class="w-4 sm:w-7">
+                        </li>
+                        <li class="flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer sm:w-14 aspect-square hover:-translate-y-1">
+                            <img src="./assets/git.png" alt="" class="w-4 sm:w-7">
+                        </li>
+                        <li class="flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer sm:w-14 aspect-square hover:-translate-y-1">
+                            <img src="./assets/postman.png" alt="" class="w-4 sm:w-7">
+                        </li>
+                        <li class="flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer sm:w-14 aspect-square hover:-translate-y-1">
+                            <img src="./assets/mongodb.png" alt="" class="w-4 sm:w-7">
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+         </div>
+<!-- Services -->
+         <div id="services" class="w-full px-[12%] py-10  bg-slate-50 scroll-mt-20 wow slideInLeft" data-wow-duration="1s" data-wow-delay="2s">
+            <h4 class="mb-2 text-lg text-center">What I Offer</h4>
+            <h1 class="text-5xl text-center">Services</h1>
+            <p class="max-w-2xl mx-auto mt-5 mb-12 text-center tracking-thin">
+                "Transform your ideas into reality with expert API creation, cutting-edge web and mobile app development, and seamless AI integration. Elevate your digital presence with top-tier design and innovative solutions!"
+            </p>
+            <div class="grid grid-cols-1 gap-6 my-10 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="px-8 py-12 border border-gray-400 rounded-lg hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    <img src="./assets/webdesign.png" alt="" class="w-10 ">
+                    <h3 class="my-4 text-lg text-gray-700">
+Web Design & development
+                    </h3>
+                    <p class="text-sm leading-5 text-gray-600">
+                        Web Design and Web Development process of Building, Programming..
+                    </p>
+
+                </div>
+                <div class="px-8 py-12 border border-gray-400 rounded-lg hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    <img src="./assets/ai.png" alt="" class="w-10 ">
+                    <h3 class="my-4 text-lg text-gray-700">
+AI Intergration for Web Applications
+                    </h3>
+                    <p class="text-sm leading-5 text-gray-600">
+                        Web Design and Web Development process of Building, Programming..
+                    </p>
+
+                </div>
+                <div class="px-8 py-12 border border-gray-400 rounded-lg hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    <img src="./assets/mobile.png" alt="" class="w-10 ">
+                    <h3 class="my-4 text-lg text-gray-700">
+                        Mobile App Development
+                    </h3>
+                    <p class="text-sm leading-5 text-gray-600">
+                        Web Design and Web Development process of Building, Programming..
+                    </p>
+
+                </div>
+                <div class="px-8 py-12 border border-gray-400 rounded-lg hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    <img src="./assets/api.jpg" alt="" class="w-10 ">
+                    <h3 class="my-4 text-lg text-gray-700">
+                        Api Intergration
+                    </h3>
+                    <p class="text-sm leading-5 text-gray-600">
+                        Web Design and Web Development process of Building, Programming..
+                    </p>
+
+                </div>
+
+            </div>
+
+         </div>
+<!-- Portfolio -->
+         <div id="portfolio" class="w-full px-[12%] py-10 scroll-mt-20">
+            <h4 class="mb-2 text-lg text-center">What I done</h4>
+            <h1 class="text-5xl text-center">PortFolio</h1>
+            <p class="max-w-2xl mx-auto mt-5 mb-12 text-center tracking-thin">
+                Here are some of my recent projects. I'm always looking for new challenges and opportunities to learn.
+            </p>
+
+            <div class="mt-20">
+                <!-- projects -->
+                <div class="px-5 py-24 ">
+                  <div class="flex flex-wrap -m-4 gap-y-4">
+          
+                    <!-- project 10 -->
+                    <div class="p-4 lg:w-1/3 sm:w-1/2">
+                      <div class="relative flex rounded-md mentions-project">
+                        <img alt="developer-landing-page"
+                          class="absolute inset-0 object-cover object-center w-full h-full rounded-md"
+                          src="./assets/projects/project_1.JPG">
+                        <div class="px-8 py-10 relative z-10 w-full bg-[#051830] transition-all opacity-0 hover:opacity-95">
+                          <h2 class="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">MERN Stack </h2>
+                          <h1 class="mb-3 text-lg font-medium text-white title-font">Rollin's Eat - Admin Dashboard </h1>
+                          <p class="leading-relaxed text-slate-50">
+                            Developed backend functionality with Node.js.
+                          </p>
+                          <div class="flex justify-start gap-4 mt-2 text-slate-50">
+                            <!-- <a href="" target="_blank" class="w-9 h-9">
+                              <ion-icon name="logo-github" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a> -->
+                            <a href="https://drive.google.com/file/d/1uawsuX2sBFjkapGZzkyBdAnygJbb598F/view?usp=sharing" target="_blank" class="w-9 h-9">
+                              <ion-icon name="desktop-outline" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+          
+          
+                    <!-- project 11 -->
+                    <div class="p-4 lg:w-1/3 sm:w-1/2">
+                      <div class="relative flex rounded-md mentions-project">
+                        <img alt="developer-landing-page"
+                          class="absolute inset-0 object-cover object-center w-full h-full rounded-md"
+                          src="./assets/projects/project_2.png">
+                        <div class="px-8 py-10 relative z-10 w-full bg-[#051830] transition-all opacity-0 hover:opacity-95">
+                          <h2 class="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">HTML CSS Bootstrap</h2>
+                          <h1 class="mb-3 text-lg font-medium text-white title-font">Agency Website Theme </h1>
+                          <p class="leading-relaxed text-slate-50">
+                            This is Basic website Theme for Bootstrap  Practice.
+                          </p>
+                          <div class="flex justify-start gap-4 mt-2 text-slate-50">
+                            <a href="https://github.com/mubeengulzar/cloud-Website" target="_blank" class="w-9 h-9">
+                              <ion-icon name="logo-github" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a>
+                            <a href="https://cloud-website-nu.vercel.app/" target="_blank" class="w-9 h-9">
+                              <ion-icon name="desktop-outline" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- project 12 -->
+                    <div class="p-4 lg:w-1/3 sm:w-1/2">
+                      <div class="relative flex rounded-md mentions-project">
+                        <img alt="web-hosting-landing-page"
+                          class="absolute inset-0 object-cover object-center w-full h-full rounded-md"
+                          src="./assets/projects/project_3.JPG">
+                        <div class="px-8 py-10 relative z-10 w-full bg-[#051830] transition-all opacity-0 hover:opacity-95">
+                          <h2 class="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">HTML CSS React JS </h2>
+                          <h1 class="mb-3 text-lg font-medium text-white title-font">Cryptocurrency Data Visualization with React.js</h1>
+                          <p class="leading-relaxed text-slate-50">
+                            Built React.js application displaying real-time cryptocurrency data..
+                          </p>
+                          <div class="flex justify-start gap-4 mt-2 text-slate-50">
+                            <a href="https://github.com/mubeengulzar/CryptoWeb" target="_blank"
+                              class="w-9 h-9">
+                              <ion-icon name="logo-github" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a>
+                            <a href="https://cryptoapp-pied.vercel.app" target="_blank" class="w-9 h-9">
+                              <ion-icon name="desktop-outline" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- project 15 -->
+                    <div class="p-4 lg:w-1/3 sm:w-1/2">
+                      <div class="relative flex rounded-md mentions-project">
+                        <img alt="product-designer-landing-page"
+                          class="absolute inset-0 object-cover object-center w-full h-full rounded-md"
+                          src="./assets/projects/project_4.JPG">
+                        <div class="px-8 py-10 relative z-10 w-full bg-[#051830] transition-all opacity-0 hover:opacity-95">
+                          <h2 class="mb-1 text-sm font-bold tracking-widest text-indigo-500 title-font">MERN Stack</h2>
+                          <h1 class="mb-3 text-lg font-medium text-white title-font">User Authentication for using JWT Token</h1>
+                          <p class="leading-relaxed text-slate-50">
+                            User Authentication Application This MERN stack-based User Authentication Application is designed to provide a secure and user-friendly experience for managing user sessions.
+
+                          </p>
+                          <div class="flex justify-start gap-4 mt-2 text-slate-50">
+                            <a href="https://github.com/mubeengulzar/User-Authentication-for-using-JWT-Token-" target="_blank"
+                              class="w-9 h-9">
+                              <ion-icon name="logo-github" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a>
+                            <!-- <a href="" target="_blank" class="w-9 h-9">
+                              <ion-icon name="desktop-outline" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- project 14 -->
+                    <div class="p-4 lg:w-1/3 sm:w-1/2">
+                      <div class="relative flex rounded-md mentions-project">
+                        <img alt="dance-home-landing-page"
+                          class="absolute inset-0 object-cover object-center w-full h-full rounded-md"
+                          src="./assets/projects/project_5.jpeg">
+                        <div class="px-8 py-10 relative z-10 w-full bg-[#051830] transition-all opacity-0 hover:opacity-95">
+                          <h2 class="mb-1 text-sm font-bold tracking-widest text-indigo-500 title-font">React Native & Node Js </h2>
+                          <h1 class="mb-3 text-lg font-medium text-white title-font">Mobile App </h1>
+                          <p class="leading-relaxed text-slate-50">
+                            Developed backend functionality with Node.js.
+                           and mobile app using React Native.
+                          </p>
+                          <div class="flex justify-start gap-4 mt-2 text-slate-50">
+                            <!-- <a href="" target="_blank" class="w-9 h-9">
+                              <ion-icon name="logo-github" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a> -->
+                            <a href="https://drive.google.com/file/d/1BQuzKfd2H8t2xowx2RVRsYRVcNPihk-0/view?usp=sharing" target="_blank" class="w-9 h-9">
+                              <ion-icon name="desktop-outline" class="w-8 h-8 transition-all hover:text-[#309543]">
+                              </ion-icon>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- project 13 -->
+                    <div class=" lg:w-1/3 sm:w-1/2 p-4 bg-[#051830]">
+                      <div class="relative flex rounded-md mentions-project">
+                        <img alt="saas-landing-page" class="absolute inset-0 object-cover object-center w-full h-full rounded-md"
+                          src="./assets/projects/project_6.JPG">
+                        <div class="px-8 py-10 relative z-10 w-full bg-[#051830] transition-all opacity-0 hover:opacity-95">
+                          <h2 class="mb-1 text-sm font-bold tracking-widest text-indigo-500 title-font">EJS & Nodejs</h2>
+                          <h1 class="mb-3 text-lg font-medium text-white title-font">User Data Collection Web Applications</h1>
+                          <p class="leading-relaxed text-slate-50">
+                            Designed Node.js applications using EJS templating for user information
+                            collection.
+                          </p>
+                          <div class="flex justify-start gap-4 mt-2 text-slate-50">
+                            <a href="https://github.com/mubeengulzar/ejs" target="_blank" class="w-9 h-9">
+                              <ion-icon name="logo-github" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a>
+                            <!-- <a href="" target="_blank" class="w-9 h-9">
+                              <ion-icon name="desktop-outline" class="w-8 h-8 transition-all hover:text-[#309543]"></ion-icon>
+                            </a> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+          
+              </div>
+
+
+
+
+            </div>
+
+            <!-- Contact Us -->
+            
+              <!-- <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-slate-50">
+                <h4 class="mb-2 text-lg text-center font-Ovo">Connect with me</h4>
+                <h2 class="text-5xl text-center font-Ovo">Get in touch</h2>
+                <p class="max-w-2xl mx-auto mt-5 mb-12 text-center font-Ovo">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+              
+                <form action="" class="max-w-2xl mx-auto">
+                  <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+                    <input type="text" placeholder="Enter your name " class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+                    <input type="email" placeholder="Enter your email " class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+                  </div>
+                  <textarea rows="6" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"></textarea>
+                  <button class="flex items-center justify-between gap-2 px-8 py-3 mx-auto text-white duration-500 rounded-full w-max bg-black/80 hover:bg-black">Submit <img src="./assets/rightarrow.png" alt="" class="w-4"></button>
+
+                </form>
+
+
+              </div> -->
+              <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-slate-50 wow bounceInUp">
+                <h4 class="mb-2 text-lg text-center font-Ovo">Connect with me</h4>
+                <h2 class="text-5xl text-center font-Ovo">Get in touch</h2>
+                <p class="max-w-2xl mx-auto mt-5 mb-12 text-center font-Ovo">
+                    I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.
+                </p>
+                
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto">
+                    <input type="hidden" name="access_key" value="9e8b55f0-e3d6-4c98-a2ef-c6c4a452e387" />
+                    <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+                        <input type="text" name="name" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required>
+                        <input type="email" name="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required>
+                    </div>
+                    <textarea rows="6" name="message" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required></textarea>
+                    <button type="submit" class="flex items-center justify-between gap-2 px-8 py-3 mx-auto text-white duration-500 rounded-full w-max bg-black/80 hover:bg-black">Submit <img src="./assets/rightarrow.png" alt="" class="w-4"></button>
+                </form>
+            </div>
+             
+<!-- footer -->
+              <div class="mt-20">
+                <!-- <div class="text-center">
+                  <h1 class="text-3xl font-bold shadow-sm cursor-pointer w-28 mr-14">Mubeen.</h1>
+
+                </div> -->
+                <div class="w-full p-2 pt-8 mt-8 text-center border-t border-gray-200">
+                  <a class="text-black " href="mailto:mubeengulzar756@gmail.com"> <ion-icon class="mr-2 text-center" name="mail-outline"></ion-icon>mubeengulzar756@gmail.com</a>
+                  <p class="my-5 leading-normal">Karachi.
+                    <br>Pakistan
+                  </p>
+                  <span class="inline-flex" >
+                    <a class="text-gray-500" href="https://github.com/mubeengulzar">
+                      <ion-icon name="logo-github"></ion-icon>                    
+                    </a>
+                    <a class="ml-4 text-gray-500" href="mailto:mubeengulzar756@gmail.com">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      
+                    </a>
+                    <a class="w-6 h-2 ml-4 text-gray-500" href="https://www.linkedin.com/in/muhammad-mubeen-3669041a7/">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                      
+                    </a>
+                    <a class="ml-4 text-gray-500" href="tel:03272492947">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                  </span>
+
+                  <p class="my-5 leading-normal">&copy; 2024 Made By Mubeen.
+                  </p>
+
+                </div>
+
+              </div>
+              
+              
+              <button id="backToTop" class="fixed z-50 hidden p-3 text-white bg-black rounded-full bottom-5 right-5">
+                <i class="text-2xl ion-android-arrow-up"></i>
+            </button>
+
+
+    
+     <script src="./script.js"> </script>
+     <!-- <script>
+      // Show/Hide Back to Top Button
+      window.addEventListener('scroll', function() {
+          const backToTopButton = document.getElementById('backToTop');
+          if (window.scrollY > 300) { // Show button after scrolling down 300px
+              backToTopButton.classList.add('show');
+          } else {
+              backToTopButton.classList.remove('show');
+          }
+      });
+
+      // Smooth Scroll to Top
+      document.getElementById('backToTop').addEventListener('click', function() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      });
+  </script> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+              <script>
+              new WOW().init();
+              </script>
+     <!-- Include the Toastify JS and handle form submission -->
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      const form = event.target;
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+          method: 'POST',
+          body: formData,
+      })
+      .then(response => response.json())
+      .then(result => {
+          if (result.success) {
+              Toastify({
+                  text: "Email submitted successfully!",
+                  duration: 3000,
+                  gravity: "top", // `top` or `bottom`
+                  position: "right", // `left`, `center` or `right`
+                  backgroundColor: "#4CAF50", // Success green color
+                  stopOnFocus: true, // Prevents dismissing of toast on hover
+              }).showToast();
+
+              form.reset(); // Reset the form after successful submission
+          } else {
+              alert('There was a problem submitting the form. Please try again.');
+          }
+      })
+      .catch(error => {
+          alert('There was a problem submitting the form. Please try again.');
+          console.error('Error:', error);
+      });
+  });
+</script>
+</body>
+</html>
